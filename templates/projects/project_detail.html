@@ -1,0 +1,266 @@
+{% extends "base/base.html" %}
+{% block title %}{{ project.reference }}{% endblock %}
+{% block page_title %}Project: {{ project.reference }} – {{ project.name }}{% endblock %}
+{% block nav_projects %}active{% endblock %}
+
+{% block content %}
+{% if project.is_locked %}
+<div class="locked-banner mb-3">
+  <i class="fa fa-lock me-2"></i> <strong>Project Locked</strong> –
+  {{ project.lock_reason }} (by {{ project.locked_by.get_full_name|default:project.locked_by.username }}
+  on {{ project.locked_at|date:"d M Y H:i" }})
+  {% if user.profile.is_admin %}
+  <form method="post" action="{% url 'project_unlock' project.pk %}" class="d-inline ms-3">
+    {% csrf_token %}
+    <button class="btn btn-sm btn-warning">Unlock</button>
+  </form>
+  {% endif %}
+</div>
+{% endif %}
+
+<div class="row g-3 mb-3">
+  <div class="col-md-8">
+    <div class="card h-100">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <span><i class="fa fa-info-circle me-2"></i>Project Details</span>
+        <span class="status-pill bg-{% if project.status == 'locked' %}danger{% else %}primary{% endif %} text-white">
+          {{ project.get_status_display }}
+        </span>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="mb-1"><strong>Reference:</strong> {{ project.reference }}</p>
+            <p class="mb-1"><strong>Customer:</strong>
+              <a href="{% url 'customer_detail' project.customer.pk %}">{{ project.customer.name }}</a></p>
+            <p class="mb-1"><strong>Salesman:</strong>
+              {{ project.salesman.get_full_name|default:project.salesman.username|default:"—" }}</p>
+            <p class="mb-1"><strong>Site Address:</strong>
+              {{ project.site_address|default:"Not specified" }}</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="mb-1"><strong>Created:</strong> {{ project.created_at|date:"d M Y" }}</p>
+            <p class="mb-1"><strong>Survey Date:</strong> {{ project.survey_date|date:"d M Y"|default:"TBD" }}</p>
+            <p class="mb-1"><strong>Delivery Date:</strong> {{ project.delivery_date|date:"d M Y"|default:"TBD" }}</p>
+          </div>
+        </div>
+        {% if project.notes %}<p class="mt-2 text-muted small">{{ project.notes }}</p>{% endif %}
+      </div>
+      <div class="card-footer d-flex gap-2 flex-wrap">
+        <a href="{% url 'quotation_create' project.pk %}" class="btn btn-sm btn-primary">
+          <i class="fa fa-file-invoice me-1"></i> Create Quotation
+        </a>
+        <a href="{% url 'job_create' project.pk %}" class="btn btn-sm btn-gold">
+          <i class="fa fa-industry me-1"></i> New Production Job
+        </a>
+        {% if not project.is_locked and user.profile.is_admin %}
+        <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#lockModal">
+          <i class="fa fa-lock me-1"></i> Lock Project
+        </button>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-header"><i class="fa fa-chart-bar me-2"></i>Summary</div>
+      <div class="card-body">
+        <p class="mb-1"><strong>Measurements:</strong> {{ measurements|length }}</p>
+        <p class="mb-1"><strong>Quotations:</strong> {{ project.quotations.count }}</p>
+        <p class="mb-1"><strong>Production Jobs:</strong> {{ project.production_jobs.count }}</p>
+        <p class="mb-1"><strong>Total Area:</strong>
+          {% with total=0 %}
+          {% for m in measurements %}{% if forloop.first %}{% endif %}{% endfor %}
+          {{ measurements|length }} items
+          {% endwith %}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Measurements Table -->
+<div class="card mb-3">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <span><i class="fa fa-ruler-combined me-2"></i>Measurements / Items</span>
+    {% if not project.is_locked %}
+    <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#addMeasModal">
+      <i class="fa fa-plus me-1"></i> Add Item
+    </button>
+    {% endif %}
+  </div>
+  <div class="card-body p-0">
+    <table class="table table-hover mb-0">
+      <thead>
+        <tr>
+          <th>Line</th><th>Ref</th><th>Location</th><th>System</th>
+          <th>W × H (mm)</th><th>Qty</th><th>Glass</th><th>Area (sqft)</th><th>Confirmed</th><th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for m in measurements %}
+        <tr>
+          <td><strong>{{ m.line_no }}</strong></td>
+          <td>{{ m.reference }}</td>
+          <td>{{ m.location }}</td>
+          <td><small>{{ m.system.name }}</small></td>
+          <td>{{ m.effective_width }} × {{ m.effective_height }}</td>
+          <td>{{ m.qty }}</td>
+          <td><small>{{ m.glass|default:"—" }}</small></td>
+          <td>{{ m.area_sqft }}</td>
+          <td>
+            {% if m.dimensions_confirmed %}
+            <i class="fa fa-check-circle text-success"></i>
+            {% else %}
+            <i class="fa fa-clock text-warning"></i>
+            {% endif %}
+          </td>
+          <td>
+            {% if not project.is_locked %}
+            <button class="btn btn-xs btn-outline-secondary btn-sm"
+                    onclick="editMeasurement({{ m.pk }}, {{ m.reference|json_script:'ref'|safe }})">
+              <i class="fa fa-edit"></i>
+            </button>
+            {% endif %}
+          </td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="10" class="text-center text-muted py-4">
+          No measurements. <a href="#" data-bs-toggle="modal" data-bs-target="#addMeasModal">Add first item</a>
+        </td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Quotations -->
+{% if project.quotations.exists %}
+<div class="card mb-3">
+  <div class="card-header"><i class="fa fa-file-invoice me-2"></i>Quotations</div>
+  <div class="card-body p-0">
+    <table class="table mb-0">
+      <thead><tr><th>Quote No.</th><th>Status</th><th>Date</th><th>Valid Until</th><th></th></tr></thead>
+      <tbody>
+        {% for q in project.quotations.all %}
+        <tr>
+          <td><strong>{{ q.quote_no }}</strong>/Rev{{ q.revision }}</td>
+          <td><span class="badge bg-secondary">{{ q.get_status_display }}</span></td>
+          <td>{{ q.quote_date|date:"d M Y" }}</td>
+          <td>{{ q.valid_until|date:"d M Y"|default:"—" }}</td>
+          <td><a href="{% url 'quotation_detail' q.pk %}" class="btn btn-sm btn-outline-primary">Open</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+
+<!-- Add Measurement Modal -->
+<div class="modal fade" id="addMeasModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header" style="background:var(--cf-dark);color:#fff;">
+        <h5 class="modal-title">Add Measurement</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <form method="post" action="{% url 'measurement_add' project.pk %}">
+        {% csrf_token %}
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md-3">
+              <label class="form-label">Reference <span class="text-danger">*</span></label>
+              <input type="text" name="reference" class="form-control" placeholder="W1, D1..." required>
+            </div>
+            <div class="col-md-5">
+              <label class="form-label">Location <span class="text-danger">*</span></label>
+              <input type="text" name="location" class="form-control" placeholder="Living Room, Kitchen..." required>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">System <span class="text-danger">*</span></label>
+              <select name="system" class="form-select" required>
+                {% for s in systems %}<option value="{{ s.pk }}">{{ s.name }}</option>{% endfor %}
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Width (mm) <span class="text-danger">*</span></label>
+              <input type="number" name="width" class="form-control" required min="100">
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Height (mm) <span class="text-danger">*</span></label>
+              <input type="number" name="height" class="form-control" required min="100">
+            </div>
+            <div class="col-md-2">
+              <label class="form-label">Qty</label>
+              <input type="number" name="qty" class="form-control" value="1" min="1">
+            </div>
+            <div class="col-md-2">
+              <label class="form-label">Panels</label>
+              <input type="number" name="n_panels" class="form-control" value="1" min="1">
+            </div>
+            <div class="col-md-2">
+              <label class="form-label">Hinge Side</label>
+              <select name="hinge_side" class="form-select">
+                <option value="">N/A</option>
+                <option value="L">Left</option>
+                <option value="R">Right</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <label class="form-label">Glass</label>
+              <select name="glass" class="form-select">
+                <option value="">— Select Glass —</option>
+                {% for g in glasses %}<option value="{{ g.pk }}">{{ g.name }} ({{ g.thickness }})</option>{% endfor %}
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Color</label>
+              <select name="color" class="form-select">
+                <option value="">— Select Color —</option>
+                {% for c in colors %}<option value="{{ c.pk }}">{{ c.name }}</option>{% endfor %}
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Description</label>
+              <input type="text" name="description" class="form-control" placeholder="e.g. Casement FO/L.R, Bay 3 Facet">
+            </div>
+            <div class="col-12">
+              <label class="form-label">Notes</label>
+              <textarea name="notes" class="form-control" rows="2"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Add Measurement</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Lock Modal -->
+<div class="modal fade" id="lockModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title"><i class="fa fa-lock me-2"></i>Lock Project</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <form method="post" action="{% url 'project_lock' project.pk %}">
+        {% csrf_token %}
+        <div class="modal-body">
+          <p class="text-danger">Locking will <strong>prevent all editing</strong>. Only admin can unlock.</p>
+          <label class="form-label">Reason</label>
+          <input type="text" name="reason" class="form-control" value="Production approved">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-danger">Lock Project</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
