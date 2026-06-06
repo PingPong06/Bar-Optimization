@@ -228,7 +228,7 @@ class Command(BaseCommand):
         )
 
         self.stdout.write(self.style.SUCCESS(
-            '\n✓ Initial data seeded successfully.\n'
+            '\n[OK] Initial data seeded successfully.\n'
             'Next steps:\n'
             '  1. Create superuser: python manage.py createsuperuser\n'
             '  2. Run server: python manage.py runserver\n'

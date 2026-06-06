@@ -55,20 +55,53 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'CutFlow.wsgi.application'
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('DB_NAME', 'cutflow_db'),
-        'USER': os.environ.get('DB_USER', 'cutflow_user'),
-        'PASSWORD': os.environ.get('DB_PASSWORD', 'Aniket@109'),
-        'HOST': os.environ.get('DB_HOST', 'localhost'),
-        'PORT': os.environ.get('DB_PORT', '3306'),
-        'OPTIONS': {
-            'charset': 'utf8mb4',
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
+# Test MySQL connection or use SQLite if configured or if MySQL fails
+use_sqlite = os.environ.get('USE_SQLITE', 'False') == 'True'
+
+if not use_sqlite:
+    try:
+        import MySQLdb
+        db_name = os.environ.get('DB_NAME', 'cutflow_db')
+        db_user = os.environ.get('DB_USER', 'cutflow_user')
+        db_password = os.environ.get('DB_PASSWORD', 'Aniket@109')
+        db_host = os.environ.get('DB_HOST', 'localhost')
+        db_port = os.environ.get('DB_PORT', '3306')
+        
+        # Try a quick test connection
+        conn = MySQLdb.connect(
+            host=db_host,
+            user=db_user,
+            password=db_password,
+            port=int(db_port),
+            connect_timeout=2
+        )
+        conn.close()
+    except Exception as e:
+        print(f"WARNING: MySQL connection failed ({e}). Falling back to SQLite for development.")
+        use_sqlite = True
+
+if use_sqlite:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': os.environ.get('DB_NAME', 'cutflow_db'),
+            'USER': os.environ.get('DB_USER', 'cutflow_user'),
+            'PASSWORD': os.environ.get('DB_PASSWORD', 'Aniket@109'),
+            'HOST': os.environ.get('DB_HOST', 'localhost'),
+            'PORT': os.environ.get('DB_PORT', '3306'),
+            'OPTIONS': {
+                'charset': 'utf8mb4',
+                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+            },
+        }
+    }
 
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},

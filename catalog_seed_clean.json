@@ -1,0 +1,3019 @@
+[
+{
+  "model": "catalog.brand",
+  "pk": 1,
+  "fields": {
+    "name": "Generic",
+    "description": "",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.020Z"
+  }
+},
+{
+  "model": "catalog.brand",
+  "pk": 2,
+  "fields": {
+    "name": "Rehau",
+    "description": "",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.023Z"
+  }
+},
+{
+  "model": "catalog.brand",
+  "pk": 3,
+  "fields": {
+    "name": "VEKA",
+    "description": "",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.024Z"
+  }
+},
+{
+  "model": "catalog.brand",
+  "pk": 4,
+  "fields": {
+    "name": "Schuco",
+    "description": "",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.026Z"
+  }
+},
+{
+  "model": "catalog.brand",
+  "pk": 5,
+  "fields": {
+    "name": "Aluplast",
+    "description": "",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.028Z"
+  }
+},
+{
+  "model": "catalog.brand",
+  "pk": 6,
+  "fields": {
+    "name": "Fenesta",
+    "description": "",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.030Z"
+  }
+},
+{
+  "model": "catalog.brand",
+  "pk": 7,
+  "fields": {
+    "name": "CutFlow Standard",
+    "description": "Default system brand",
+    "is_active": true,
+    "created_at": "2026-06-01T18:40:30.276Z"
+  }
+},
+{
+  "model": "catalog.brand",
+  "pk": 8,
+  "fields": {
+    "name": "jindal",
+    "description": "",
+    "is_active": true,
+    "created_at": "2026-06-02T16:04:01.282Z"
+  }
+},
+{
+  "model": "catalog.color",
+  "pk": 1,
+  "fields": {
+    "name": "White",
+    "code": "RAL 9016",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.color",
+  "pk": 2,
+  "fields": {
+    "name": "Ivory",
+    "code": "RAL 1014",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.color",
+  "pk": 3,
+  "fields": {
+    "name": "Grey",
+    "code": "RAL 7035",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.color",
+  "pk": 4,
+  "fields": {
+    "name": "Dark Grey",
+    "code": "RAL 7016",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.color",
+  "pk": 5,
+  "fields": {
+    "name": "Black",
+    "code": "RAL 9005",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.color",
+  "pk": 6,
+  "fields": {
+    "name": "Brown",
+    "code": "RAL 8014",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.color",
+  "pk": 7,
+  "fields": {
+    "name": "Woodgrain Oak",
+    "code": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.color",
+  "pk": 8,
+  "fields": {
+    "name": "Woodgrain Mahogany",
+    "code": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.system",
+  "pk": 1,
+  "fields": {
+    "code": "SY01",
+    "name": "Hinge Int Glz System",
+    "category": "casement",
+    "brand": 1,
+    "description": "",
+    "is_active": true,
+    "sort_order": 0,
+    "markup_percent": "15.00",
+    "premium_markup_percent": "25.00",
+    "budget_markup_percent": "10.00"
+  }
+},
+{
+  "model": "catalog.system",
+  "pk": 2,
+  "fields": {
+    "code": "SY02",
+    "name": "Sliding 2-Track System",
+    "category": "sliding",
+    "brand": 1,
+    "description": "",
+    "is_active": true,
+    "sort_order": 0,
+    "markup_percent": "15.00",
+    "premium_markup_percent": "25.00",
+    "budget_markup_percent": "10.00"
+  }
+},
+{
+  "model": "catalog.system",
+  "pk": 3,
+  "fields": {
+    "code": "SY03",
+    "name": "Sliding 3-Track System",
+    "category": "sliding",
+    "brand": 1,
+    "description": "",
+    "is_active": true,
+    "sort_order": 0,
+    "markup_percent": "15.00",
+    "premium_markup_percent": "25.00",
+    "budget_markup_percent": "10.00"
+  }
+},
+{
+  "model": "catalog.system",
+  "pk": 4,
+  "fields": {
+    "code": "SY04",
+    "name": "Fixed Frame System",
+    "category": "fixed",
+    "brand": 1,
+    "description": "",
+    "is_active": true,
+    "sort_order": 0,
+    "markup_percent": "15.00",
+    "premium_markup_percent": "25.00",
+    "budget_markup_percent": "10.00"
+  }
+},
+{
+  "model": "catalog.system",
+  "pk": 5,
+  "fields": {
+    "code": "SY05",
+    "name": "Tilt & Turn System",
+    "category": "casement",
+    "brand": 1,
+    "description": "",
+    "is_active": true,
+    "sort_order": 0,
+    "markup_percent": "15.00",
+    "premium_markup_percent": "25.00",
+    "budget_markup_percent": "10.00"
+  }
+},
+{
+  "model": "catalog.system",
+  "pk": 6,
+  "fields": {
+    "code": "SY06",
+    "name": "Super System Door",
+    "category": "door_swing",
+    "brand": 1,
+    "description": "",
+    "is_active": true,
+    "sort_order": 0,
+    "markup_percent": "15.00",
+    "premium_markup_percent": "25.00",
+    "budget_markup_percent": "10.00"
+  }
+},
+{
+  "model": "catalog.system",
+  "pk": 7,
+  "fields": {
+    "code": "SY07",
+    "name": "Sliding Door System",
+    "category": "door_sliding",
+    "brand": 1,
+    "description": "",
+    "is_active": true,
+    "sort_order": 0,
+    "markup_percent": "15.00",
+    "premium_markup_percent": "25.00",
+    "budget_markup_percent": "10.00"
+  }
+},
+{
+  "model": "catalog.system",
+  "pk": 8,
+  "fields": {
+    "code": "SY08",
+    "name": "Louvre System",
+    "category": "louver",
+    "brand": 1,
+    "description": "",
+    "is_active": true,
+    "sort_order": 0,
+    "markup_percent": "15.00",
+    "premium_markup_percent": "25.00",
+    "budget_markup_percent": "10.00"
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 1,
+  "fields": {
+    "system": 1,
+    "profile": 1,
+    "role": "outer_frame_top",
+    "formula_group": "",
+    "sort_order": 10,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 2,
+  "fields": {
+    "system": 1,
+    "profile": 1,
+    "role": "outer_frame_bottom",
+    "formula_group": "",
+    "sort_order": 20,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 3,
+  "fields": {
+    "system": 1,
+    "profile": 1,
+    "role": "outer_frame_left",
+    "formula_group": "",
+    "sort_order": 30,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 4,
+  "fields": {
+    "system": 1,
+    "profile": 1,
+    "role": "outer_frame_right",
+    "formula_group": "",
+    "sort_order": 40,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 5,
+  "fields": {
+    "system": 1,
+    "profile": 2,
+    "role": "shutter_vertical",
+    "formula_group": "",
+    "sort_order": 50,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 6,
+  "fields": {
+    "system": 1,
+    "profile": 2,
+    "role": "shutter_horizontal",
+    "formula_group": "",
+    "sort_order": 60,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 7,
+  "fields": {
+    "system": 1,
+    "profile": 13,
+    "role": "interlock",
+    "formula_group": "",
+    "sort_order": 70,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 8,
+  "fields": {
+    "system": 1,
+    "profile": 3,
+    "role": "mullion",
+    "formula_group": "",
+    "sort_order": 80,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 9,
+  "fields": {
+    "system": 1,
+    "profile": 10,
+    "role": "bead_horizontal",
+    "formula_group": "",
+    "sort_order": 90,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 10,
+  "fields": {
+    "system": 1,
+    "profile": 10,
+    "role": "bead_vertical",
+    "formula_group": "",
+    "sort_order": 100,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 11,
+  "fields": {
+    "system": 1,
+    "profile": 14,
+    "role": "track",
+    "formula_group": "",
+    "sort_order": 110,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 12,
+  "fields": {
+    "system": 2,
+    "profile": 7,
+    "role": "outer_frame_top",
+    "formula_group": "",
+    "sort_order": 10,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 13,
+  "fields": {
+    "system": 2,
+    "profile": 7,
+    "role": "outer_frame_bottom",
+    "formula_group": "",
+    "sort_order": 20,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 14,
+  "fields": {
+    "system": 2,
+    "profile": 7,
+    "role": "outer_frame_left",
+    "formula_group": "",
+    "sort_order": 30,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 15,
+  "fields": {
+    "system": 2,
+    "profile": 7,
+    "role": "outer_frame_right",
+    "formula_group": "",
+    "sort_order": 40,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 16,
+  "fields": {
+    "system": 2,
+    "profile": 8,
+    "role": "shutter_vertical",
+    "formula_group": "",
+    "sort_order": 50,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 17,
+  "fields": {
+    "system": 2,
+    "profile": 8,
+    "role": "shutter_horizontal",
+    "formula_group": "",
+    "sort_order": 60,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 18,
+  "fields": {
+    "system": 2,
+    "profile": 13,
+    "role": "interlock",
+    "formula_group": "",
+    "sort_order": 70,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 19,
+  "fields": {
+    "system": 2,
+    "profile": 4,
+    "role": "mullion",
+    "formula_group": "",
+    "sort_order": 80,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 20,
+  "fields": {
+    "system": 2,
+    "profile": 11,
+    "role": "bead_horizontal",
+    "formula_group": "",
+    "sort_order": 90,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 21,
+  "fields": {
+    "system": 2,
+    "profile": 11,
+    "role": "bead_vertical",
+    "formula_group": "",
+    "sort_order": 100,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 22,
+  "fields": {
+    "system": 2,
+    "profile": 14,
+    "role": "track",
+    "formula_group": "",
+    "sort_order": 110,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 23,
+  "fields": {
+    "system": 3,
+    "profile": 7,
+    "role": "outer_frame_top",
+    "formula_group": "",
+    "sort_order": 10,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 24,
+  "fields": {
+    "system": 3,
+    "profile": 7,
+    "role": "outer_frame_bottom",
+    "formula_group": "",
+    "sort_order": 20,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 25,
+  "fields": {
+    "system": 3,
+    "profile": 7,
+    "role": "outer_frame_left",
+    "formula_group": "",
+    "sort_order": 30,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 26,
+  "fields": {
+    "system": 3,
+    "profile": 7,
+    "role": "outer_frame_right",
+    "formula_group": "",
+    "sort_order": 40,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 27,
+  "fields": {
+    "system": 3,
+    "profile": 8,
+    "role": "shutter_vertical",
+    "formula_group": "",
+    "sort_order": 50,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 28,
+  "fields": {
+    "system": 3,
+    "profile": 8,
+    "role": "shutter_horizontal",
+    "formula_group": "",
+    "sort_order": 60,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 29,
+  "fields": {
+    "system": 3,
+    "profile": 13,
+    "role": "interlock",
+    "formula_group": "",
+    "sort_order": 70,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 30,
+  "fields": {
+    "system": 3,
+    "profile": 4,
+    "role": "mullion",
+    "formula_group": "",
+    "sort_order": 80,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 31,
+  "fields": {
+    "system": 3,
+    "profile": 11,
+    "role": "bead_horizontal",
+    "formula_group": "",
+    "sort_order": 90,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 32,
+  "fields": {
+    "system": 3,
+    "profile": 11,
+    "role": "bead_vertical",
+    "formula_group": "",
+    "sort_order": 100,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemprofile",
+  "pk": 33,
+  "fields": {
+    "system": 3,
+    "profile": 14,
+    "role": "track",
+    "formula_group": "",
+    "sort_order": 110,
+    "is_required": true,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profile",
+  "pk": 1,
+  "fields": {
+    "stock_no": "OF004W",
+    "name": "Outer Frame",
+    "category": "outer_frame",
+    "system": null,
+    "brand": 1,
+    "description": "",
+    "weight_per_meter": "1.2000",
+    "cost_per_meter": "320.00",
+    "standard_bar_length": 6000,
+    "offset_left": 0,
+    "offset_right": 0,
+    "offset_top": 0,
+    "offset_bottom": 0,
+    "default_left_angle": "90.0",
+    "default_right_angle": "90.0",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.086Z",
+    "updated_at": "2026-06-01T13:36:13.086Z"
+  }
+},
+{
+  "model": "catalog.profile",
+  "pk": 2,
+  "fields": {
+    "stock_no": "TS001W",
+    "name": "T Sash",
+    "category": "sash",
+    "system": null,
+    "brand": 1,
+    "description": "",
+    "weight_per_meter": "0.9000",
+    "cost_per_meter": "240.00",
+    "standard_bar_length": 6000,
+    "offset_left": 3,
+    "offset_right": 3,
+    "offset_top": 3,
+    "offset_bottom": 3,
+    "default_left_angle": "90.0",
+    "default_right_angle": "90.0",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.090Z",
+    "updated_at": "2026-06-01T13:36:13.090Z"
+  }
+},
+{
+  "model": "catalog.profile",
+  "pk": 3,
+  "fields": {
+    "stock_no": "TM001W",
+    "name": "T Transom/Mullion",
+    "category": "transom",
+    "system": null,
+    "brand": 1,
+    "description": "",
+    "weight_per_meter": "0.8500",
+    "cost_per_meter": "220.00",
+    "standard_bar_length": 6000,
+    "offset_left": 0,
+    "offset_right": 0,
+    "offset_top": 0,
+    "offset_bottom": 0,
+    "default_left_angle": "90.0",
+    "default_right_angle": "90.0",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.092Z",
+    "updated_at": "2026-06-01T13:36:13.092Z"
+  }
+},
+{
+  "model": "catalog.profile",
+  "pk": 4,
+  "fields": {
+    "stock_no": "ZM001W",
+    "name": "Z Transom/Mullion",
+    "category": "mullion",
+    "system": null,
+    "brand": 1,
+    "description": "",
+    "weight_per_meter": "0.8800",
+    "cost_per_meter": "230.00",
+    "standard_bar_length": 6000,
+    "offset_left": 0,
+    "offset_right": 0,
+    "offset_top": 0,
+    "offset_bottom": 0,
+    "default_left_angle": "90.0",
+    "default_right_angle": "90.0",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.095Z",
+    "updated_at": "2026-06-01T13:36:13.095Z"
+  }
+},
+{
+  "model": "catalog.profile",
+  "pk": 5,
+  "fields": {
+    "stock_no": "ZS001W",
+    "name": "Z Sash",
+    "category": "sash",
+    "system": null,
+    "brand": 1,
+    "description": "",
+    "weight_per_meter": "0.9200",
+    "cost_per_meter": "250.00",
+    "standard_bar_length": 6000,
+    "offset_left": 3,
+    "offset_right": 3,
+    "offset_top": 3,
+    "offset_bottom": 3,
+    "default_left_angle": "90.0",
+    "default_right_angle": "90.0",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.099Z",
+    "updated_at": "2026-06-01T13:36:13.099Z"
+  }
+},
+{
+  "model": "catalog.profile",
+  "pk": 6,
+  "fields": {
+    "stock_no": "ZS003W",
+    "name": "Z Sash (Wide)",
+    "category": "sash",
+    "system": null,
+    "brand": 1,
+    "description": "",
+    "weight_per_meter": "0.9800",
+    "cost_per_meter": "260.00",
+    "standard_bar_length": 6000,
+    "offset_left": 3,
+    "offset_right": 3,
+    "offset_top": 3,
+    "offset_bottom": 3,
+    "default_left_angle": "90.0",
+    "default_right_angle": "90.0",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.101Z",
+    "updated_at": "2026-06-01T13:36:13.101Z"
+  }
+},
+{
+  "model": "catalog.profile",
+  "pk": 7,
+  "fields": {
+    "stock_no": "SOF01W",
+    "name": "2T Slider Frame",
+    "category": "slider_frame",
+    "system": null,
+    "brand": 1,
+    "description": "",
+    "weight_per_meter": "1.1000",
+    "cost_per_meter": "300.00",
+    "standard_bar_length": 6000,
+    "offset_left": 0,
+    "offset_right": 0,
+    "offset_top": 0,
+    "offset_bottom": 0,
+    "default_left_angle": "90.0",
+    "default_right_angle": "90.0",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.104Z",
+    "updated_at": "2026-06-01T13:36:13.104Z"
+  }
+},
+{
+  "model": "catalog.profile",
+  "pk": 8,
+  "fields": {
+    "stock_no": "SS001W",
+    "name": "Slider Sash",
+    "category": "slider_sash",
+    "system": null,
+    "brand": 1,
+    "description": "",
+    "weight_per_meter": "0.9500",
+    "cost_per_meter": "255.00",
+    "standard_bar_length": 6000,
+    "offset_left": 3,
+    "offset_right": 3,
+    "offset_top": 3,
+    "offset_bottom": 3,
+    "default_left_angle": "90.0",
+    "default_right_angle": "90.0",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.108Z",
+    "updated_at": "2026-06-01T13:36:13.108Z"
+  }
+},
+{
+  "model": "catalog.profile",
+  "pk": 9,
+  "fields": {
+    "stock_no": "FM001W",
+    "name": "French Mullion",
+    "category": "mullion",
+    "system": null,
+    "brand": 1,
+    "description": "",
+    "weight_per_meter": "0.8000",
+    "cost_per_meter": "210.00",
+    "standard_bar_length": 6000,
+    "offset_left": 0,
+    "offset_right": 0,
+    "offset_top": 0,
+    "offset_bottom": 0,
+    "default_left_angle": "90.0",
+    "default_right_angle": "90.0",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.111Z",
+    "updated_at": "2026-06-01T13:36:13.111Z"
+  }
+},
+{
+  "model": "catalog.profile",
+  "pk": 10,
+  "fields": {
+    "stock_no": "WM_GB15W",
+    "name": "Slp Co-ex Bead 15mm",
+    "category": "bead",
+    "system": null,
+    "brand": 1,
+    "description": "",
+    "weight_per_meter": "0.1200",
+    "cost_per_meter": "35.00",
+    "standard_bar_length": 6000,
+    "offset_left": 0,
+    "offset_right": 0,
+    "offset_top": 0,
+    "offset_bottom": 0,
+    "default_left_angle": "90.0",
+    "default_right_angle": "90.0",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.112Z",
+    "updated_at": "2026-06-01T13:36:13.112Z"
+  }
+},
+{
+  "model": "catalog.profile",
+  "pk": 11,
+  "fields": {
+    "stock_no": "WM_GB17W",
+    "name": "Slp Co-ex Bead 17mm",
+    "category": "bead",
+    "system": null,
+    "brand": 1,
+    "description": "",
+    "weight_per_meter": "0.1400",
+    "cost_per_meter": "38.00",
+    "standard_bar_length": 6000,
+    "offset_left": 0,
+    "offset_right": 0,
+    "offset_top": 0,
+    "offset_bottom": 0,
+    "default_left_angle": "90.0",
+    "default_right_angle": "90.0",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.114Z",
+    "updated_at": "2026-06-01T13:36:13.114Z"
+  }
+},
+{
+  "model": "catalog.profile",
+  "pk": 12,
+  "fields": {
+    "stock_no": "WM_GB3W",
+    "name": "Bv. Co-ex Bead",
+    "category": "bead",
+    "system": null,
+    "brand": 1,
+    "description": "",
+    "weight_per_meter": "0.1300",
+    "cost_per_meter": "36.00",
+    "standard_bar_length": 6000,
+    "offset_left": 0,
+    "offset_right": 0,
+    "offset_top": 0,
+    "offset_bottom": 0,
+    "default_left_angle": "90.0",
+    "default_right_angle": "90.0",
+    "is_active": true,
+    "created_at": "2026-06-01T13:36:13.117Z",
+    "updated_at": "2026-06-01T13:36:13.117Z"
+  }
+},
+{
+  "model": "catalog.profile",
+  "pk": 13,
+  "fields": {
+    "stock_no": "INTL01W",
+    "name": "Interlock Profile",
+    "category": "mullion",
+    "system": null,
+    "brand": 7,
+    "description": "",
+    "weight_per_meter": "0.8700",
+    "cost_per_meter": "225.00",
+    "standard_bar_length": 6000,
+    "offset_left": 0,
+    "offset_right": 0,
+    "offset_top": 0,
+    "offset_bottom": 0,
+    "default_left_angle": "90.0",
+    "default_right_angle": "90.0",
+    "is_active": true,
+    "created_at": "2026-06-01T18:40:30.339Z",
+    "updated_at": "2026-06-01T18:40:30.339Z"
+  }
+},
+{
+  "model": "catalog.profile",
+  "pk": 14,
+  "fields": {
+    "stock_no": "TRK001W",
+    "name": "Sliding Track",
+    "category": "slider_frame",
+    "system": null,
+    "brand": 7,
+    "description": "",
+    "weight_per_meter": "1.3000",
+    "cost_per_meter": "330.00",
+    "standard_bar_length": 6000,
+    "offset_left": 0,
+    "offset_right": 0,
+    "offset_top": 0,
+    "offset_bottom": 0,
+    "default_left_angle": "90.0",
+    "default_right_angle": "90.0",
+    "is_active": true,
+    "created_at": "2026-06-01T18:40:30.346Z",
+    "updated_at": "2026-06-01T18:40:30.346Z"
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 1,
+  "fields": {
+    "profile": 1,
+    "system": 1,
+    "system_profile": null,
+    "position": "frame_width_top",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 2,
+  "fields": {
+    "profile": 1,
+    "system": 1,
+    "system_profile": null,
+    "position": "frame_width_bottom",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 3,
+  "fields": {
+    "profile": 1,
+    "system": 1,
+    "system_profile": null,
+    "position": "frame_height_left",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 4,
+  "fields": {
+    "profile": 1,
+    "system": 1,
+    "system_profile": null,
+    "position": "frame_height_right",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 5,
+  "fields": {
+    "profile": 2,
+    "system": 1,
+    "system_profile": null,
+    "position": "sash_width_top",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W - offset_l - offset_r",
+    "quantity_formula": "n_panels",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 6,
+  "fields": {
+    "profile": 2,
+    "system": 1,
+    "system_profile": null,
+    "position": "sash_width_bottom",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W - offset_l - offset_r",
+    "quantity_formula": "n_panels",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 7,
+  "fields": {
+    "profile": 2,
+    "system": 1,
+    "system_profile": null,
+    "position": "sash_height_left",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H - offset_t - offset_b",
+    "quantity_formula": "n_panels",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 8,
+  "fields": {
+    "profile": 2,
+    "system": 1,
+    "system_profile": null,
+    "position": "sash_height_right",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H - offset_t - offset_b",
+    "quantity_formula": "n_panels",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 9,
+  "fields": {
+    "profile": 3,
+    "system": 1,
+    "system_profile": null,
+    "position": "transom_width",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W - offset_l - offset_r",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 10,
+  "fields": {
+    "profile": 1,
+    "system": 1,
+    "system_profile": 1,
+    "position": "outer_top",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W - offset_l - offset_r",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 11,
+  "fields": {
+    "profile": 1,
+    "system": 1,
+    "system_profile": 1,
+    "position": "outer_bottom",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W - offset_l - offset_r",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 12,
+  "fields": {
+    "profile": 1,
+    "system": 1,
+    "system_profile": 1,
+    "position": "outer_left",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H - offset_t - offset_b",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 13,
+  "fields": {
+    "profile": 1,
+    "system": 1,
+    "system_profile": 1,
+    "position": "outer_right",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H - offset_t - offset_b",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 14,
+  "fields": {
+    "profile": 2,
+    "system": 1,
+    "system_profile": 5,
+    "position": "sash_width",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W - offset_l - offset_r",
+    "quantity_formula": "n_panels",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 15,
+  "fields": {
+    "profile": 2,
+    "system": 1,
+    "system_profile": 5,
+    "position": "sash_height",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H - offset_t - offset_b",
+    "quantity_formula": "n_panels",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 16,
+  "fields": {
+    "profile": 13,
+    "system": 1,
+    "system_profile": 7,
+    "position": "interlock_length",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H - offset_t - offset_b",
+    "quantity_formula": "n_panels - 1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 17,
+  "fields": {
+    "profile": 3,
+    "system": 1,
+    "system_profile": 8,
+    "position": "mullion_length",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H - offset_t - offset_b",
+    "quantity_formula": "n_panels - 1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 18,
+  "fields": {
+    "profile": 10,
+    "system": 1,
+    "system_profile": 9,
+    "position": "bead_horizontal",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W - 20",
+    "quantity_formula": "2 * n_panels",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 19,
+  "fields": {
+    "profile": 10,
+    "system": 1,
+    "system_profile": 9,
+    "position": "bead_vertical",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H - 20",
+    "quantity_formula": "2 * n_panels",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 20,
+  "fields": {
+    "profile": 14,
+    "system": 1,
+    "system_profile": 11,
+    "position": "track_length",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 21,
+  "fields": {
+    "profile": 7,
+    "system": 2,
+    "system_profile": 12,
+    "position": "outer_top",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 22,
+  "fields": {
+    "profile": 7,
+    "system": 2,
+    "system_profile": 12,
+    "position": "outer_bottom",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 23,
+  "fields": {
+    "profile": 7,
+    "system": 2,
+    "system_profile": 12,
+    "position": "outer_left",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 24,
+  "fields": {
+    "profile": 7,
+    "system": 2,
+    "system_profile": 12,
+    "position": "outer_right",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 25,
+  "fields": {
+    "profile": 8,
+    "system": 2,
+    "system_profile": 16,
+    "position": "sash_width",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "round((W / n_panels) - 35, 2)",
+    "quantity_formula": "n_panels",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 26,
+  "fields": {
+    "profile": 8,
+    "system": 2,
+    "system_profile": 16,
+    "position": "sash_height",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H - offset_t - offset_b",
+    "quantity_formula": "2 * n_panels",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 27,
+  "fields": {
+    "profile": 13,
+    "system": 2,
+    "system_profile": 18,
+    "position": "interlock_length",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H - offset_t - offset_b",
+    "quantity_formula": "n_panels - 1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 28,
+  "fields": {
+    "profile": 4,
+    "system": 2,
+    "system_profile": 19,
+    "position": "mullion_length",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H - offset_t - offset_b",
+    "quantity_formula": "n_panels - 1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 29,
+  "fields": {
+    "profile": 11,
+    "system": 2,
+    "system_profile": 20,
+    "position": "bead_horizontal",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W - 20",
+    "quantity_formula": "2 * n_panels",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 30,
+  "fields": {
+    "profile": 11,
+    "system": 2,
+    "system_profile": 20,
+    "position": "bead_vertical",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H - 20",
+    "quantity_formula": "2 * n_panels",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 31,
+  "fields": {
+    "profile": 14,
+    "system": 2,
+    "system_profile": 22,
+    "position": "track_length",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 32,
+  "fields": {
+    "profile": 7,
+    "system": 3,
+    "system_profile": 23,
+    "position": "outer_top",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 33,
+  "fields": {
+    "profile": 7,
+    "system": 3,
+    "system_profile": 23,
+    "position": "outer_bottom",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 34,
+  "fields": {
+    "profile": 7,
+    "system": 3,
+    "system_profile": 23,
+    "position": "outer_left",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 35,
+  "fields": {
+    "profile": 7,
+    "system": 3,
+    "system_profile": 23,
+    "position": "outer_right",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 36,
+  "fields": {
+    "profile": 8,
+    "system": 3,
+    "system_profile": 27,
+    "position": "sash_width",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "round((W / n_panels) - 35, 2)",
+    "quantity_formula": "n_panels",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 37,
+  "fields": {
+    "profile": 8,
+    "system": 3,
+    "system_profile": 27,
+    "position": "sash_height",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H - offset_t - offset_b",
+    "quantity_formula": "2 * n_panels",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 38,
+  "fields": {
+    "profile": 13,
+    "system": 3,
+    "system_profile": 29,
+    "position": "interlock_length",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H - offset_t - offset_b",
+    "quantity_formula": "n_panels - 1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 39,
+  "fields": {
+    "profile": 4,
+    "system": 3,
+    "system_profile": 30,
+    "position": "mullion_length",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H - offset_t - offset_b",
+    "quantity_formula": "n_panels - 1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 40,
+  "fields": {
+    "profile": 11,
+    "system": 3,
+    "system_profile": 31,
+    "position": "bead_horizontal",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W - 20",
+    "quantity_formula": "2 * n_panels",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 41,
+  "fields": {
+    "profile": 11,
+    "system": 3,
+    "system_profile": 31,
+    "position": "bead_vertical",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "H - 20",
+    "quantity_formula": "2 * n_panels",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.profileformula",
+  "pk": 42,
+  "fields": {
+    "profile": 14,
+    "system": 3,
+    "system_profile": 33,
+    "position": "track_length",
+    "formula_type": "cut",
+    "panel_condition": "",
+    "min_width": null,
+    "max_width": null,
+    "min_height": null,
+    "max_height": null,
+    "formula": "W",
+    "quantity_formula": "1",
+    "cut_angle_left": "90.0",
+    "cut_angle_right": "90.0",
+    "remarks": "",
+    "sort_order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.glass",
+  "pk": 1,
+  "fields": {
+    "code": "G-5CL",
+    "name": "5mm Clear",
+    "specification": "clear",
+    "thickness": "5mm",
+    "cost_per_sqft": "45.00",
+    "cost_per_sqm": "484.00",
+    "weight_per_sqm": "12.500",
+    "is_toughened": false,
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.147Z"
+  }
+},
+{
+  "model": "catalog.glass",
+  "pk": 2,
+  "fields": {
+    "code": "G-6CL",
+    "name": "6mm Clear",
+    "specification": "clear",
+    "thickness": "6mm",
+    "cost_per_sqft": "55.00",
+    "cost_per_sqm": "592.00",
+    "weight_per_sqm": "15.000",
+    "is_toughened": false,
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.149Z"
+  }
+},
+{
+  "model": "catalog.glass",
+  "pk": 3,
+  "fields": {
+    "code": "G-5FR",
+    "name": "5mm Frosted",
+    "specification": "frosted",
+    "thickness": "5mm",
+    "cost_per_sqft": "60.00",
+    "cost_per_sqm": "646.00",
+    "weight_per_sqm": "12.500",
+    "is_toughened": false,
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.150Z"
+  }
+},
+{
+  "model": "catalog.glass",
+  "pk": 4,
+  "fields": {
+    "code": "G-5TG",
+    "name": "5mm Toughened",
+    "specification": "toughened",
+    "thickness": "5mm",
+    "cost_per_sqft": "90.00",
+    "cost_per_sqm": "968.00",
+    "weight_per_sqm": "12.500",
+    "is_toughened": true,
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.152Z"
+  }
+},
+{
+  "model": "catalog.glass",
+  "pk": 5,
+  "fields": {
+    "code": "G-6TG",
+    "name": "6mm Toughened",
+    "specification": "toughened",
+    "thickness": "6mm",
+    "cost_per_sqft": "110.00",
+    "cost_per_sqm": "1184.00",
+    "weight_per_sqm": "15.000",
+    "is_toughened": true,
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.153Z"
+  }
+},
+{
+  "model": "catalog.glass",
+  "pk": 6,
+  "fields": {
+    "code": "G-5106CL",
+    "name": "5-10-6 Clear DGU",
+    "specification": "dgu",
+    "thickness": "5-10-6",
+    "cost_per_sqft": "185.00",
+    "cost_per_sqm": "1990.00",
+    "weight_per_sqm": "26.000",
+    "is_toughened": false,
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.156Z"
+  }
+},
+{
+  "model": "catalog.glass",
+  "pk": 7,
+  "fields": {
+    "code": "G-5106TG",
+    "name": "5-10-6 Toughened DGU",
+    "specification": "dgu",
+    "thickness": "5-10-6 Toughened",
+    "cost_per_sqft": "280.00",
+    "cost_per_sqm": "3014.00",
+    "weight_per_sqm": "26.000",
+    "is_toughened": true,
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.159Z"
+  }
+},
+{
+  "model": "catalog.glass",
+  "pk": 8,
+  "fields": {
+    "code": "G-6106TG",
+    "name": "6-10-6 Toughened DGU",
+    "specification": "dgu",
+    "thickness": "6-10-6 Toughened",
+    "cost_per_sqft": "320.00",
+    "cost_per_sqm": "3445.00",
+    "weight_per_sqm": "29.000",
+    "is_toughened": true,
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.160Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 1,
+  "fields": {
+    "stock_no": "BUTTHNGWHT",
+    "name": "Butt Hinge (2D) White",
+    "category": "hinge",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "140.00",
+    "weight_per_unit": "0.650",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.164Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 2,
+  "fields": {
+    "stock_no": "FLGHNG-WHT",
+    "name": "Flag/3D Hinge White",
+    "category": "hinge",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "190.00",
+    "weight_per_unit": "0.890",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.166Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 3,
+  "fields": {
+    "stock_no": "FRHSS14-L",
+    "name": "Friction Hinge L 14\" SS",
+    "category": "hinge",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "352.00",
+    "weight_per_unit": "0.610",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.168Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 4,
+  "fields": {
+    "stock_no": "FRHSS14-R",
+    "name": "Friction Hinge R 14\" SS",
+    "category": "hinge",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "352.00",
+    "weight_per_unit": "0.610",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.170Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 5,
+  "fields": {
+    "stock_no": "HNDL1-L-WHT",
+    "name": "Cockspur Handle LK L White",
+    "category": "handle",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "125.00",
+    "weight_per_unit": "0.400",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.173Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 6,
+  "fields": {
+    "stock_no": "HNDL1-R-WHT",
+    "name": "Cockspur Handle LK R White",
+    "category": "handle",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "125.00",
+    "weight_per_unit": "0.400",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.178Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 7,
+  "fields": {
+    "stock_no": "HNDL1A-WHT",
+    "name": "Door Handle w/ Key White",
+    "category": "handle",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "135.00",
+    "weight_per_unit": "1.100",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.180Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 8,
+  "fields": {
+    "stock_no": "SLHNDL1AWHT",
+    "name": "Slider Handle A White",
+    "category": "handle",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "110.00",
+    "weight_per_unit": "0.650",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.182Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 9,
+  "fields": {
+    "stock_no": "CDESPSS7",
+    "name": "25 Door SSEspag 1800",
+    "category": "lock",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "600.00",
+    "weight_per_unit": "1.230",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.184Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 10,
+  "fields": {
+    "stock_no": "SLESG1SS6",
+    "name": "7.5 SLD SSEspag 1200",
+    "category": "lock",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "277.00",
+    "weight_per_unit": "0.570",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.185Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 11,
+  "fields": {
+    "stock_no": "ROLLER1",
+    "name": "Slider Roller 1",
+    "category": "roller",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "150.00",
+    "weight_per_unit": "0.050",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.189Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 12,
+  "fields": {
+    "stock_no": "KEEPER/STKR",
+    "name": "Slider Striker",
+    "category": "accessory",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "47.00",
+    "weight_per_unit": "0.050",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.193Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 13,
+  "fields": {
+    "stock_no": "STRKR3",
+    "name": "Door Striker",
+    "category": "accessory",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "40.00",
+    "weight_per_unit": "0.050",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.195Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 14,
+  "fields": {
+    "stock_no": "STRKR4",
+    "name": "Door Center Striker",
+    "category": "accessory",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "45.00",
+    "weight_per_unit": "0.050",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.196Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 15,
+  "fields": {
+    "stock_no": "Shootbolt1",
+    "name": "FR Window Shootbolt",
+    "category": "lock",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "164.00",
+    "weight_per_unit": "0.390",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.198Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 16,
+  "fields": {
+    "stock_no": "ShootboltKeep",
+    "name": "Shootbolt Keeper",
+    "category": "accessory",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "95.00",
+    "weight_per_unit": "0.020",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.200Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 17,
+  "fields": {
+    "stock_no": "BumpStp.",
+    "name": "Bump Stop Base",
+    "category": "accessory",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "25.00",
+    "weight_per_unit": "0.250",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.201Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 18,
+  "fields": {
+    "stock_no": "BumpStpRubber",
+    "name": "Bump Stop Rubber",
+    "category": "accessory",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "20.00",
+    "weight_per_unit": "0.150",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.203Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 19,
+  "fields": {
+    "stock_no": "CasementWedge",
+    "name": "Casement Wedge",
+    "category": "accessory",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "6.00",
+    "weight_per_unit": "0.020",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.207Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 20,
+  "fields": {
+    "stock_no": "CockspurWedge",
+    "name": "Cockspur Wedge",
+    "category": "accessory",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "70.00",
+    "weight_per_unit": "0.020",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.210Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 21,
+  "fields": {
+    "stock_no": "TR254",
+    "name": "TurnRestrictor 254mm",
+    "category": "accessory",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "180.00",
+    "weight_per_unit": "0.800",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.212Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 22,
+  "fields": {
+    "stock_no": "CBLOCK01",
+    "name": "Cavity Locking Block",
+    "category": "accessory",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "10.00",
+    "weight_per_unit": "0.010",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.213Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 23,
+  "fields": {
+    "stock_no": "GBRIDGE",
+    "name": "Glazing Bridge",
+    "category": "accessory",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "10.00",
+    "weight_per_unit": "0.060",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.215Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 24,
+  "fields": {
+    "stock_no": "RBLOCK01",
+    "name": "Run Up Block",
+    "category": "accessory",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "12.00",
+    "weight_per_unit": "0.020",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.217Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 25,
+  "fields": {
+    "stock_no": "FR01C",
+    "name": "French End Caps",
+    "category": "accessory",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "108.00",
+    "weight_per_unit": "0.030",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.218Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 26,
+  "fields": {
+    "stock_no": "WM_SCREW2",
+    "name": "Reinforcement Screw",
+    "category": "screw",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "1.00",
+    "weight_per_unit": "0.000",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.221Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 27,
+  "fields": {
+    "stock_no": "CBLOCKSCRW",
+    "name": "Cavity Locking Block Screw",
+    "category": "screw",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "1.00",
+    "weight_per_unit": "0.000",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.224Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 28,
+  "fields": {
+    "stock_no": "WM_BUTTHNGSCRW",
+    "name": "Butt Hinge Screw",
+    "category": "screw",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "2.00",
+    "weight_per_unit": "0.000",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.226Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 29,
+  "fields": {
+    "stock_no": "BackROD",
+    "name": "Foam/Backer Rod",
+    "category": "installation",
+    "brand": 1,
+    "unit": "m",
+    "unit_cost": "0.00",
+    "weight_per_unit": "0.000",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.227Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 30,
+  "fields": {
+    "stock_no": "FScrew8x100",
+    "name": "Install Screw 8╫100",
+    "category": "installation",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "0.00",
+    "weight_per_unit": "0.000",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.229Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 31,
+  "fields": {
+    "stock_no": "Si280",
+    "name": "Silicon Sealant 280ml",
+    "category": "installation",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "0.00",
+    "weight_per_unit": "0.000",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.232Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 32,
+  "fields": {
+    "stock_no": "MaskTape",
+    "name": "Masking Tape",
+    "category": "installation",
+    "brand": 1,
+    "unit": "m",
+    "unit_cost": "0.00",
+    "weight_per_unit": "0.000",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.234Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 33,
+  "fields": {
+    "stock_no": "UPacker",
+    "name": "Installation Packer",
+    "category": "installation",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "0.00",
+    "weight_per_unit": "0.000",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.236Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 34,
+  "fields": {
+    "stock_no": "PS1",
+    "name": "Packing Shim 1mm",
+    "category": "installation",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "0.00",
+    "weight_per_unit": "0.000",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.238Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 35,
+  "fields": {
+    "stock_no": "PS3",
+    "name": "Packing Shim 3mm",
+    "category": "installation",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "0.00",
+    "weight_per_unit": "0.000",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.240Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 36,
+  "fields": {
+    "stock_no": "PS5",
+    "name": "Packing Shim 5mm",
+    "category": "installation",
+    "brand": 1,
+    "unit": "pcs",
+    "unit_cost": "0.00",
+    "weight_per_unit": "0.000",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T13:36:13.241Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 37,
+  "fields": {
+    "stock_no": "GASKET-SL",
+    "name": "Sliding Gasket",
+    "category": "gasket",
+    "brand": 7,
+    "unit": "m",
+    "unit_cost": "25.00",
+    "weight_per_unit": "0.010",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T18:40:30.706Z"
+  }
+},
+{
+  "model": "catalog.hardware",
+  "pk": 38,
+  "fields": {
+    "stock_no": "GASKET-HN",
+    "name": "Hinge Gasket",
+    "category": "gasket",
+    "brand": 7,
+    "unit": "m",
+    "unit_cost": "30.00",
+    "weight_per_unit": "0.010",
+    "is_active": true,
+    "notes": "",
+    "created_at": "2026-06-01T18:40:30.710Z"
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 1,
+  "fields": {
+    "system": 1,
+    "hardware": 1,
+    "quantity_formula": "n_panels * 2",
+    "notes": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 2,
+  "fields": {
+    "system": 1,
+    "hardware": 5,
+    "quantity_formula": "1",
+    "notes": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 3,
+  "fields": {
+    "system": 1,
+    "hardware": 6,
+    "quantity_formula": "1",
+    "notes": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 4,
+  "fields": {
+    "system": 1,
+    "hardware": 15,
+    "quantity_formula": "1",
+    "notes": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 5,
+  "fields": {
+    "system": 1,
+    "hardware": 16,
+    "quantity_formula": "1",
+    "notes": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 6,
+  "fields": {
+    "system": 1,
+    "hardware": 19,
+    "quantity_formula": "n_panels",
+    "notes": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 7,
+  "fields": {
+    "system": 1,
+    "hardware": 20,
+    "quantity_formula": "n_panels",
+    "notes": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 8,
+  "fields": {
+    "system": 1,
+    "hardware": 22,
+    "quantity_formula": "4 * n_panels",
+    "notes": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 9,
+  "fields": {
+    "system": 1,
+    "hardware": 23,
+    "quantity_formula": "6 * n_panels",
+    "notes": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 10,
+  "fields": {
+    "system": 1,
+    "hardware": 26,
+    "quantity_formula": "12 * n_panels",
+    "notes": "Screws for anchors",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 11,
+  "fields": {
+    "system": 1,
+    "hardware": 38,
+    "quantity_formula": "n_panels * 4",
+    "notes": "Perimeter gasket",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 12,
+  "fields": {
+    "system": 2,
+    "hardware": 11,
+    "quantity_formula": "n_panels * 2",
+    "notes": "Rollers for sliding sash",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 13,
+  "fields": {
+    "system": 2,
+    "hardware": 8,
+    "quantity_formula": "n_panels",
+    "notes": "Slider handle",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 14,
+  "fields": {
+    "system": 2,
+    "hardware": 10,
+    "quantity_formula": "1",
+    "notes": "Espag lock per unit",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 15,
+  "fields": {
+    "system": 2,
+    "hardware": 26,
+    "quantity_formula": "10 * n_panels",
+    "notes": "Fixing screws",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 16,
+  "fields": {
+    "system": 2,
+    "hardware": 37,
+    "quantity_formula": "n_panels * 4",
+    "notes": "Sliding gasket",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 17,
+  "fields": {
+    "system": 3,
+    "hardware": 11,
+    "quantity_formula": "n_panels * 2",
+    "notes": "Rollers for sliding sash",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 18,
+  "fields": {
+    "system": 3,
+    "hardware": 8,
+    "quantity_formula": "n_panels",
+    "notes": "Slider handle",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 19,
+  "fields": {
+    "system": 3,
+    "hardware": 10,
+    "quantity_formula": "1",
+    "notes": "Espag lock per unit",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 20,
+  "fields": {
+    "system": 3,
+    "hardware": 26,
+    "quantity_formula": "10 * n_panels",
+    "notes": "Fixing screws",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.systemhardwarerule",
+  "pk": 21,
+  "fields": {
+    "system": 3,
+    "hardware": 37,
+    "quantity_formula": "n_panels * 4",
+    "notes": "Sliding gasket",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.companysettings",
+  "pk": 1,
+  "fields": {
+    "company_name": "CutFlow Fenestration Pvt. Ltd.",
+    "address_line1": "D-27, Reva Park",
+    "address_line2": "Near Exponential Complex, Old Padra Road",
+    "city": "Vadodara",
+    "state": "Gujarat",
+    "pincode": "390 015",
+    "phone": "+91 7575 009691",
+    "email": "info@cutflow.com",
+    "website": "",
+    "logo": "",
+    "gst_no": "",
+    "sgst_rate": "9.00",
+    "cgst_rate": "9.00",
+    "igst_rate": "18.00",
+    "quotation_validity_days": 30,
+    "default_payment_terms": "50% advance with order.\n25% before dispatch.\n25% on delivery.",
+    "quotation_terms": "All aluminium profiles are powder-coated unless otherwise specified.\nGlass is a bought-out item; actual glass sizes may vary ▒2mm.\nThis quotation is valid for 30 days from the above date.\nPrices are exclusive of GST unless specified.\nDelivery timeline: 4-6 weeks from order confirmation & advance.",
+    "default_bar_length_mm": 6000,
+    "kerf_mm": 5,
+    "end_waste_mm": 10,
+    "min_reusable_offcut_mm": 300,
+    "fabrication_rate_per_meter": "25.00",
+    "material_wastage_percent": "8.00",
+    "profit_margin_percent": "20.00",
+    "updated_at": "2026-06-01T13:36:13.279Z"
+  }
+}
+]
