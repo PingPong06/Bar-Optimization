@@ -1,7 +1,7 @@
-from django.shortcuts import render, redirect
+from django.http import JsonResponse
+from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from projects.models import Project, ProjectStatus
-from quotations.models import Quotation
 
 
 @login_required
@@ -18,3 +18,7 @@ def dashboard(request):
         'recent_projects': projects,
         'stats': stats,
     })
+
+
+def healthz(request):
+    return JsonResponse({'status': 'ok'})

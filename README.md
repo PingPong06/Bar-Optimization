@@ -299,3 +299,19 @@ python manage.py collectstatic --noinput
 # Shell for debugging
 python manage.py shell
 ```
+
+---
+
+## Commercial Readiness Documentation
+
+This repository includes a commercial-use documentation pack in [`docs/`](docs/).
+
+Start with:
+
+- [`docs/00-commercial-readiness-overview.md`](docs/00-commercial-readiness-overview.md)
+- [`docs/07-deployment-runbook.md`](docs/07-deployment-runbook.md)
+- [`docs/08-security-and-compliance.md`](docs/08-security-and-compliance.md)
+- [`docs/10-testing-and-acceptance.md`](docs/10-testing-and-acceptance.md)
+- [`docs/12-commercial-gap-report.md`](docs/12-commercial-gap-report.md)
+
+Commercial status: suitable for local development and controlled pilot preparation. Before real production use, complete the critical gaps listed in the commercial gap report.
